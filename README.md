@@ -1,28 +1,42 @@
-# Adonis API application
+# API Adonis GraphQL
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Exemplo de uma API desenvolvida com AdonisJS, GraphQL e Apollo Server
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+### Technology stack
+| Tecnology                     | Version          |
+|-------------------------------|------------------|
+| react                         | 16.6.3           |
+| react-native                  | 0.58.6           |
+| native-base                   | 2.12.0           |
+| react-native-router-flux      | 4.0.6            |
+| react-native-vector-icons     | 6.3.0            |
+| styled-component              | 4.1.3            |
 
-## Setup
+### Requisites
+* [React-Native](https://facebook.github.io/react-native/docs/getting-started)
+* [React-Native-Router-Flux](https://github.com/aksonov/react-native-router-flux)
+* [Yarn](https://yarnpkg.com/en/docs/install)
 
-Use the adonis command to install the blueprint
+Clone the repository using:
 
-```bash
-adonis new yardstick --api-only
+```
+$ git clone https://github.com/JulioAugustoS/api-adonis-graphql.git
 ```
 
-or manually clone the repo and then run `npm install`.
+## Install Dependencies
 
+Access the project folder and install the dependencies using the command below:
 
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
 ```
+$ npm install
+```
+
+## Scripts Available
+
+run the command:
+
+```
+$ adonis serve --dev
+```
+
+The server will start at http://127.0.0.1:3333
