@@ -30,7 +30,7 @@ const resolvers = {
   Mutation: {
     // Handles user login
     async login(_, { email, password }, { auth }){
-      const { token } = await auth.attemp(email, password);
+      const { token } = await auth.attempt(email, password);
       return token;
     },
 

@@ -9,6 +9,6 @@ Route.route('/graphql', ({ request, auth, response }) => {
   }, request, response);
 }, ['GET', 'POST']);
 
-Route.get('/graphql', ({ request, response }) => {
-  return GraphqlAdonis.graphql({ endpoinstUrl: '/graphql' }, request, response);
+Route.get('/graphiql', ({ request, response }) => {
+  return GraphqlAdonis.graphql({ endpointUrl: '/graphql' }, request, response);
 })
