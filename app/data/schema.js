@@ -11,6 +11,7 @@ const typeDefs = `
     email: String!
     posts: [Post]
   }
+
   type Post {
     id: Int!
     title: String!
@@ -18,12 +19,14 @@ const typeDefs = `
     content: String!
     user: User!
   }
+
   type Query {
     allUsers: [User]
     fetchUser(id: Int!): User
     allPosts: [Post]
     fetchPost(id: Int!): Post
   }
+
   type Mutation {
     login(email: String!, password: String!): String
     createUser(username: String!, email: String!, password: String!): User
