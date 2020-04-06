@@ -5,7 +5,7 @@ node {
   
   stage('Clone Repository') {
     git branch: 'master',
-    credentialsId: 'github',
+    credentialsId: 'jenkins',
     url: "git@github.com:JulioAugustoS/${git_url}"
   }
   
