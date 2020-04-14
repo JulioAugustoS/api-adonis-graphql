@@ -10,6 +10,6 @@ node {
   }
   
   stage('Build in Stage') {
-    sh "cd .. && cp -r ${app_name}/* /var/www/${app_name}"
+    sh "cd .. && cp -r ${app_name}/* /var/www/"
   }
 }
