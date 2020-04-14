@@ -19,6 +19,6 @@ node {
   
   stage('Put on'){
     // Se o serviço já existir vocé usara restart caso contrario usará start (vou manter com start)
-    sh "cd /var/www/${app_name} && pm2 start --name ${app_name}"
+    sh "cd /var/www/${app_name} && pm2 start npm -- start --name ${app_name}"
   }
 }
